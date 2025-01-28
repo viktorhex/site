@@ -69,7 +69,7 @@ export default function Home() {
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>
-                <BreadcrumbLink href="/work">Work</BreadcrumbLink>
+                <BreadcrumbLink href="/shop">Shop</BreadcrumbLink>
               </BreadcrumbItem>
             </BreadcrumbList>
           </Breadcrumb>
