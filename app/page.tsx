@@ -30,8 +30,8 @@ export default function Home() {
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
 
         <div className="w-full flex items-center justify-center">
-          <Avatar>
-            <AvatarImage src="https://github.com/shadcn.png" />
+          <Avatar className="h-24 w-24">
+            <AvatarImage src="/profilepic.jpg" />
             <AvatarFallback>CN</AvatarFallback>
           </Avatar>
         </div>
@@ -42,7 +42,7 @@ export default function Home() {
             <NavigationMenuItem>
               <Link href="/" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  explore my work
+                  Explore my work
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
@@ -50,7 +50,7 @@ export default function Home() {
             <NavigationMenuItem>
               <Link href="/" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  hire me
+                  Hire me
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
@@ -58,7 +58,7 @@ export default function Home() {
             <NavigationMenuItem>
               <Link href="/" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  shop
+                  Shop
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
