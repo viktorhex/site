@@ -1,14 +1,14 @@
-import Image from "next/image";
+// import Image from "next/image";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import {
   NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuIndicator,
+  // NavigationMenuContent,
+  // NavigationMenuIndicator,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
-  NavigationMenuViewport,
+  // NavigationMenuTrigger,
+  // NavigationMenuViewport,
   navigationMenuTriggerStyle
 } from "@/components/ui/navigation-menu"
 
