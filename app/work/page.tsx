@@ -87,8 +87,9 @@ export default function Home() {
 
         <br />
 
+        <TableCaption className="w-full block">Project List.</TableCaption>
+
         <Table>
-          <TableCaption>Project List.</TableCaption>
           <TableHeader>
             <TableRow>
               <TableHead className="w-[100px]">Title</TableHead>
@@ -109,8 +110,9 @@ export default function Home() {
 
         <br />
 
+        <TableCaption className="w-full block">Work Experiences</TableCaption>
+
         <Table>
-          <TableCaption>A list of my work experiences.</TableCaption>
           <TableHeader>
             <TableRow>
               <TableHead className="w-[100px]">Role</TableHead>
