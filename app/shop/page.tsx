@@ -105,8 +105,8 @@ export default function Home() {
         right: "0px",
         marginBottom: "0px"
       }}>
-        <a href="https://www.paypal.com/donate/?business=PZ2E9EF3KZ72C&no_recurring=0&item_name=Pay+for+my+coffee&currency_code=USD" target="_blank" rel="noopener noreferrer">Buy me a coffee</a>
-      </footer>
+        <a style={{ fontWeight: 900 }} href="https://www.paypal.com/donate/?business=PZ2E9EF3KZ72C&no_recurring=0&item_name=Pay+for+my+coffee&currency_code=USD" target="_blank" rel="noopener noreferrer">&gt;Buy me a coffee&lt;</a>
+        </footer>
     </div>
   );
 }

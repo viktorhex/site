@@ -87,12 +87,13 @@ export default function Home() {
 
         <br />
 
-        <TableCaption className="w-full block">Project List.</TableCaption>
+        <TableCaption className="w-full block">Project List</TableCaption>
 
         <Table>
           <TableHeader>
             <TableRow>
-              <TableHead className="w-[100px]">Title</TableHead>
+              <TableHead className="w-[150px]">Title</TableHead>
+              <TableHead>Tools</TableHead>
               <TableHead>Start</TableHead>
               <TableHead className="text-right">End</TableHead>
             </TableRow>
@@ -101,6 +102,7 @@ export default function Home() {
             {resume.projects.map((item) => (
               <TableRow key={item.title}>
                 <TableCell>{item.title}</TableCell>
+                <TableCell>{item.tools.join(", ")}</TableCell>
                 <TableCell>{new Date(item.startDate).getFullYear()}</TableCell>
                 <TableCell className="text-right font-bold">{item.endDate ? new Date(item.endDate).getFullYear() : "---" }</TableCell>
               </TableRow>
@@ -146,8 +148,8 @@ export default function Home() {
         right: "0px",
         marginBottom: "0px"
       }}>
-        <a href="https://www.paypal.com/donate/?business=PZ2E9EF3KZ72C&no_recurring=0&item_name=Pay+for+my+coffee&currency_code=USD" target="_blank" rel="noopener noreferrer">Buy me a coffee</a>
-      </footer>
+        <a style={{ fontWeight: 900 }} href="https://www.paypal.com/donate/?business=PZ2E9EF3KZ72C&no_recurring=0&item_name=Pay+for+my+coffee&currency_code=USD" target="_blank" rel="noopener noreferrer">&gt;Buy me a coffee&lt;</a>
+        </footer>
     </div>
   );
 }
