@@ -32,7 +32,7 @@ export default function Home() {
         <div className="w-full flex items-center justify-center">
           <Avatar className="h-24 w-24">
             <AvatarImage src="/profilepic.jpg" />
-            <AvatarFallback>CN</AvatarFallback>
+            <AvatarFallback>C</AvatarFallback>
           </Avatar>
         </div>
 
@@ -40,7 +40,7 @@ export default function Home() {
           <NavigationMenuList>
 
             <NavigationMenuItem>
-              <Link href="/" legacyBehavior passHref>
+              <Link href="/work" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                   Explore my work
                 </NavigationMenuLink>
