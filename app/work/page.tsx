@@ -33,6 +33,8 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table"
+import { DataTable } from "./data-table";
+import { columns } from "./columns";
 
 export default function Home() {
   return (
@@ -100,7 +102,7 @@ export default function Home() {
           </TableHeader>
           <TableBody>
             {resume.projects.map((item) => (
-              <TableRow key={item.title}>
+              <TableRow key={item.title + item.endDate}>
                 <TableCell>{item.title}</TableCell>
                 <TableCell>{item.tools.join(", ")}</TableCell>
                 <TableCell>{new Date(item.startDate).getFullYear()}</TableCell>
@@ -114,26 +116,7 @@ export default function Home() {
 
         <TableCaption className="w-full block">Work Experiences</TableCaption>
 
-        <Table>
-          <TableHeader>
-            <TableRow>
-              <TableHead className="w-[100px]">Role</TableHead>
-              <TableHead>Company</TableHead>
-              <TableHead>Start</TableHead>
-              <TableHead className="text-right">End</TableHead>
-            </TableRow>
-          </TableHeader>
-          <TableBody>
-            {resume.work.map((item) => (
-              <TableRow key={item.title}>
-                <TableCell>{item.title}</TableCell>
-                <TableCell>{item.company}</TableCell>
-                <TableCell>{new Date(item.startDate).getFullYear()}</TableCell>
-                <TableCell className="text-right font-bold">{item.endDate ? new Date(item.endDate).getFullYear() : "---" }</TableCell>
-              </TableRow>
-            ))}
-          </TableBody>
-        </Table>
+        <DataTable columns={columns} data={resume.work} />
 
       </main>
 
