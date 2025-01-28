@@ -66,9 +66,6 @@ export default function Home() {
           </NavigationMenuList>
         </NavigationMenu>
 
-        <div className="flex items-center justify-center">
-
-        </div>
       </main>
     </div>
   );

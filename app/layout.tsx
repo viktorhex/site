@@ -25,28 +25,28 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased dark`}
+        className={`h-full pb-50 ${geistSans.variable} ${geistMono.variable} antialiased dark`}
       >
-        {children}
-        <footer style={{
-          display: "flex",
-          justifyContent: "center",
-          flexWrap: "wrap",
-          position: "relative",
-          height: "50px",
-          bottom: "0px",
-          left: "0px",
-          right: "0px",
-          marginBottom: "16px"
-        }}>
-          <div className="row w-full text-center">
-            This website was made with maximum effort.
-          </div>
-          <br />
-          <div className="row w-full text-center">
-            <a style={{ fontWeight: 900 }} href="https://www.paypal.com/donate/?business=PZ2E9EF3KZ72C&no_recurring=0&item_name=Pay+for+my+coffee&currency_code=USD" target="_blank" rel="noopener noreferrer">&gt;Buy me a coffee&lt;</a>
-          </div>
-        </footer>
+        <div className="relative min-h-screen">
+          {children}
+          <footer style={{
+            display: "flex",
+            justifyContent: "center",
+            flexWrap: "wrap",
+            position: "absolute",
+            height: "50px",
+            bottom: "0px",
+            left: "0px",
+            right: "0px",
+          }}>
+            <div className="row w-full text-center">
+              This website was made with maximum effort.
+            </div>
+            <div className="row w-full text-center">
+              <a style={{ fontWeight: 900 }} href="https://www.paypal.com/donate/?business=PZ2E9EF3KZ72C&no_recurring=0&item_name=Pay+for+my+coffee&currency_code=USD" target="_blank" rel="noopener noreferrer">&gt;Buy me a coffee&lt;</a>
+            </div>
+          </footer>
+        </div>
       </body>
     </html>
   );
