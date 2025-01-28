@@ -95,18 +95,6 @@ export default function Home() {
 
       </main>
 
-      <footer style={{
-        display: "flex",
-        "justifyContent": "center",
-        position: "fixed",
-        height: "50px",
-        bottom: "0px",
-        left: "0px",
-        right: "0px",
-        marginBottom: "0px"
-      }}>
-        <a style={{ fontWeight: 900 }} href="https://www.paypal.com/donate/?business=PZ2E9EF3KZ72C&no_recurring=0&item_name=Pay+for+my+coffee&currency_code=USD" target="_blank" rel="noopener noreferrer">&gt;Buy me a coffee&lt;</a>
-        </footer>
     </div>
   );
 }
