@@ -77,8 +77,10 @@ export default function Home() {
         </div>
 
         <br />
-
-        Email me your project inquiry at: <a className="font-bold" href="mailto:pckle466456555@gmail.com">pckle466456555@gmail.com</a>
+        Hello, I'm Chris. I'm a full-stack developer and I help you with proof-of-concepts and time-to-market.
+        <br />
+        <br />
+        Email me to ask about rates or to ask questions about your project: <a className="font-bold" href="mailto:pckle466456555@gmail.com">pckle466456555@gmail.com</a>
 
       </main>
 
