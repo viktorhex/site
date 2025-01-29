@@ -122,5 +122,8 @@ export const resume = {
       startDate: "2017-01-01",
       endDate: "2018-01-01"
     }
-  ]
+  ].map((project) => ({
+    ...project,
+    tools: project.tools.join(", ")
+  })),
 }

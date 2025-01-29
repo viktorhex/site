@@ -24,17 +24,8 @@ import {
 import Link from "next/link";
 import { resume } from "@/lib/resume";
 
-import {
-  Table,
-  TableBody,
-  TableCaption,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table"
 import { DataTable } from "./data-table";
-import { columns } from "./columns";
+import { projectItemColumns, workItemColumns } from "./columns";
 
 export default function Home() {
   return (
@@ -89,34 +80,13 @@ export default function Home() {
 
         <br />
 
-        <TableCaption className="w-full block">Project List</TableCaption>
-
-        <Table>
-          <TableHeader>
-            <TableRow>
-              <TableHead className="w-[150px]">Title</TableHead>
-              <TableHead>Tools</TableHead>
-              <TableHead>Start</TableHead>
-              <TableHead className="text-right">End</TableHead>
-            </TableRow>
-          </TableHeader>
-          <TableBody>
-            {resume.projects.map((item) => (
-              <TableRow key={item.title + item.endDate}>
-                <TableCell>{item.title}</TableCell>
-                <TableCell>{item.tools.join(", ")}</TableCell>
-                <TableCell>{new Date(item.startDate).getFullYear()}</TableCell>
-                <TableCell className="text-right font-bold">{item.endDate ? new Date(item.endDate).getFullYear() : "---" }</TableCell>
-              </TableRow>
-            ))}
-          </TableBody>
-        </Table>
+        <h4 className="w-full block">Project List</h4>
+        <DataTable columns={projectItemColumns} data={resume.projects} filterColumnId="tools" />
 
         <br />
 
-        <TableCaption className="w-full block">Work Experiences</TableCaption>
-
-        <DataTable columns={columns} data={resume.work} />
+        <h4 className="w-full block">Work Experiences</h4>
+        <DataTable columns={workItemColumns} data={resume.work} filterColumnId="title" />
 
       </main>
 
